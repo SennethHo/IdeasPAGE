@@ -1,0 +1,46 @@
+table{
+	border:2px solid grey;
+	text-align:center;
+	border-collapse:collapse;
+	width:100%;
+	table-layout:fixed;
+	max-width:1286px;
+}
+
+th,td{
+	border:2px solid grey;
+	font-size:20px;
+	padding:10px;
+}
+
+.cellselect{
+	font-weight: bold;
+	box-shadow: 2px 2px 5px #888;
+	background-color:#DCD6D0;
+}
+
+.content{
+	margin-left:250px;
+}
+
+.buttonrow{
+	display:flex;
+	width:100%;
+	table-layout:fixed;
+	max-width:1286px;
+}
+
+.buttonrow button{
+	padding :15px;
+	font-size:20px;
+	margin:10px;
+	width:100%;
+	border-radius: 20px;
+}
+
+.buttonrow button:hover{
+	cursor:pointer;
+	background-color:#b3cccc;	
+	box-shadow: 2px 2px 5px #888;
+	transition: .3s;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<HTML>      
+	<HEAD>
+		<TITLE>Homepage</TITLE>
+		<link rel ="stylesheet" href = "css/Home.css">
+		<link rel ="stylesheet" href = "navbar.html">
+		<link rel ="stylesheet" href = "css/navbar.css">
+		
+	</HEAD>
+	<BODY>
+		<ul class="navbar">
+			<div class="navL">
+				<li>
+					<img class="nav-logo segi" width="200px" src="Segi.png"></img>
+				</li>
+			</div>
+			
+			<div class="navR">
+				<li>
+					<button class="LogOut">
+						Log Out
+					</button>
+				</li>
+			</div>
+		</ul>
+		<ul class="sidebar">
+			<li class="options option1">
+				<img class="icons home"src="house.png"></img>
+				<span class="word">Home</span>
+			</li>
+			<li class="options option2">
+				<img class="icons profile"src="huh.png"></img>
+				<span class="word">nigga</span>
+			</li>			
+			<hr class="divider">			
+			<li class="options option3">
+				<img class="icons posted"src="device.png"></img>
+				<span class="word">posted</span>
+			</li>
+			<li class="options option4">
+				<img class="icons draft"src="draft.png"></img>
+				<span class="word">draft</span>
+			</li>
+		</ul>
+		
+		<div class="content">
+			<div class="create">
+				<form class="ideas">
+					<img class="profile"src="huh.png"></img>
+					<textarea class="suggest" placeholder="Share Your Ideas ..."></textarea>
+					<br/>
+					<input class = "post" type = "submit" value = "Post"/>
+				</form>
+			</div>		
+			<div class= "created">
+				<div class="user">
+					<img class="profile"src="huh.png"></img>
+					<p class ="name">
+						NIGGA
+					</p>
+				</div>
+				<P class="para">
+					A nice photograph is very hard and difficult to produce and it takes 
+						a lot of skill and setting. What's more difficult is actually a nice NIGHT
+						Photo. 
+				</p>
+				<div class="like">
+					<p>
+						69
+					</p>
+					<img class="liked" width="25px" height="25px" src="like.png"></img>
+				</div>
+				
+				<div class="option">
+					<button class="upvote" type ="button">
+						Like
+					</button>
+					<button class="downvote" type ="button">
+						Dislike
+					</button>
+					
+				</div>
+				<button class= "commentbtn" id = "commentbtn" type= ="button">
+					Comment
+				</button>
+			</div>
+			<div id = "commentform" class="commentform">
+				<div class = "commentcontent">
+					<div class = "commenthere">
+						<span class="close">&times;</span>
+						<img class="profile"src="huh.png"></img>
+						<textarea class="commentbox" placeholder="Comment....."></textarea>		
+						<input class = "commented" type = "submit" value = "Post"/>
+					</div>
+					
+					<div class= "commenters">
+						<div class="user">
+							<img class="profile"src="huh.png"></img>
+							<p class ="name">
+								NIGGA
+							</p>
+						</div>
+						<P class="para">
+							A nice photograph is very hard and difficult to produce and it takes 
+							a lot of skill and setting. What's more difficult is actually a nice NIGHT
+							Photo. 
+						</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<script>
+			var commentbtn = document.getElementById("commentbtn");
+			
+			var commentform = document.getElementById("commentform");
+			
+			var span = document.getElementsByClassName("close")[0];
+			
+			commentbtn.onclick = function(){
+				commentform.style.display = "block";
+			}
+			
+			span.onclick = function(){
+				commentform.style.display = "none";
+			}
+			
+			window.onclick = function(event){
+				if (event.target == commentform){
+					commentform.style.display = "none";
+				}
+			}
+		</script>
+	</BODY>
+</HTML>

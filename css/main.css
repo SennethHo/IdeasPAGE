@@ -1,0 +1,91 @@
+.intro{
+	left:0;
+	display:flex;
+}
+
+.login {
+	border-left: 1px solid black;
+	position: absolute;
+	right: 0;
+	width: 46.5%;
+	height: 20em;
+	margin-top: 100px;
+	text-align: center;
+}
+
+body{
+	background-color:powderblue;
+}
+
+.pic {
+	width: 65%;
+	text-align: center;
+	height: 100%;
+}
+
+.logo{
+	padding-left:100px;
+	padding-top:170px;
+	width:40%;
+}
+
+label {
+	font-size: 50px;
+	color: blue;
+	padding-left: 70px;
+	font-weight: bold;
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+	width: 30%;
+}
+
+.email{
+	margin-top:60px;
+	margin-left:40px;
+	border-radius:15px;
+	border: none;
+	background-color:#E3DBFF;
+	font-size:25px;
+}
+
+.email:before{
+	background-image:url("email.png");
+	background-size:10px 10px;
+	background-repeat: no-repeat;
+}
+
+.password{
+	margin-top:30px;
+	margin-left:40px;
+	border-radius:15px;
+	border: none;
+	background-color:#E3DBFF;
+	font-size:25px;
+}
+
+.button{
+	margin-top:55px;
+	margin-left:80px;
+	border-radius:25px;
+	border: none;
+	background-image:linear-gradient(to right,#AA90F1,#2C1766);
+	font-size:27px;
+	color:white;
+	width: 120px;
+	height:45px;
+}
+
+.button:hover{
+	cursor:pointer;
+}
+
+.forgot{
+	margin-left:220px;
+}
+
+input[type="checkbox"], p {
+	display: inline-block;
+}
+
+input[type="checkbox"] {
+	margin-left: 60px;
+}
